@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F8A74A47-171B-4D0F-B119-7AAA34F5C73D}</ProjectGuid>
+    <ProjectGuid>{427CC358-393C-4DF8-8604-C989B7E9BFC3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>NutonRoot.Task1.Test</RootNamespace>
@@ -50,8 +50,14 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="NutonRoot.Task1.Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NutonRoot.Task1.Library\NutonRoot.Task1.Library.csproj">
+      <Project>{e58234d0-ca47-4e52-bd29-6adc05508a73}</Project>
+      <Name>NutonRoot.Task1.Library</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
