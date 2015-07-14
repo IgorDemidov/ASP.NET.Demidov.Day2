@@ -25,7 +25,7 @@ namespace CustomFormatProvider.Task2.Library
             if (string.IsNullOrEmpty(format))
                 format = "H";
 
-            string numericString = arg.ToString();
+           // string numericString = arg.ToString();
 
             if (format == "H")
             {
@@ -41,7 +41,7 @@ namespace CustomFormatProvider.Task2.Library
                 throw new FormatException(string.Format("The {0} format specifier is invalid.", format));
             }
             
-            return numericString;
+            //return numericString;
         }
 
 

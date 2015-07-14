@@ -10,8 +10,7 @@ namespace CustomFormatProvider.Task2.Library
     {
         public static string ToHex(int value)
         {
-            string result = "";
-            return result;
+            return String.Format("0x{0:X}", value);
         }
     }
 }

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6DFAF65A-8E1A-45D3-AA71-0AEEC2B8360D}</ProjectGuid>
+    <ProjectGuid>{A800E908-AE9B-4A4A-B776-96283E3C77FD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CustomFormatProvider.Task2.Library</RootNamespace>
-    <AssemblyName>CustomFormatProvider.Task2.Library</AssemblyName>
+    <RootNamespace>Nod</RootNamespace>
+    <AssemblyName>Nod</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,8 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomConvert.cs" />
-    <Compile Include="HexadeсimalFormatter.cs" />
+    <Compile Include="NodCalc.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
