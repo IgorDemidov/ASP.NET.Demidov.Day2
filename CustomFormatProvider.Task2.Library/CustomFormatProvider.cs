@@ -29,7 +29,7 @@ namespace CustomFormatProvider.Task2.Library
 
             if (format == "H")
             {
-                if (int.TryParse())
+                if (arg is int)
                     return numericString;
                 else
                     throw new FormatException(
@@ -42,8 +42,9 @@ namespace CustomFormatProvider.Task2.Library
             }
             
             return numericString;
-
-
         }
+
+
+
     }
 }
