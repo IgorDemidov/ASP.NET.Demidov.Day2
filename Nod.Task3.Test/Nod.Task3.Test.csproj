@@ -54,7 +54,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Nod\Nod.Task3.Library.csproj">
+    <ProjectReference Include="..\Nod.Task3.Library\Nod.Task3.Library.csproj">
       <Project>{a800e908-ae9b-4a4a-b776-96283e3c77fd}</Project>
       <Name>Nod.Task3.Library</Name>
     </ProjectReference>
