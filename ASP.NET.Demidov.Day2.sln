@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "Cons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nod.Task3.Library", "Nod\Nod.Task3.Library.csproj", "{A800E908-AE9B-4A4A-B776-96283E3C77FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nod.Task3.Test", "Nod.Task3.Test\Nod.Task3.Test.csproj", "{B840B742-1FF0-407E-8CCD-0C6D7927ECC1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{A800E908-AE9B-4A4A-B776-96283E3C77FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A800E908-AE9B-4A4A-B776-96283E3C77FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A800E908-AE9B-4A4A-B776-96283E3C77FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B840B742-1FF0-407E-8CCD-0C6D7927ECC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B840B742-1FF0-407E-8CCD-0C6D7927ECC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B840B742-1FF0-407E-8CCD-0C6D7927ECC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B840B742-1FF0-407E-8CCD-0C6D7927ECC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
