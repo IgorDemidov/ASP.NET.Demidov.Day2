@@ -13,33 +13,31 @@ namespace NutonRoot.Task1.Library
         /// </summary>
         public static double RootOf(double arg, int n, double accuracy)
         {
-            try
+            if ((arg < 0) && (n % 2 == 0))
             {
-                double x = arg;
-                double next = x;
-                do
-                {
-                    x = next;
-                    next = (((n - 1) * x) + (arg / Math.Pow(x, (n - 1)))) / n;
-                } while (Math.Abs(x - next) > accuracy);
-
-                return x;
+                throw new ArgumentOutOfRangeException("arg", "The calculation result is not a real value. (Complex value)");
             }
-            catch (Exception ex)
+
+            if (n == 0)
             {
-                if ((arg < 0) && (n % 2 != 0))
-                {
-                    throw new ArgumentOutOfRangeException("arg", "The calculation result is not a real value. (Complex value)");
-                }
+                throw new ArgumentOutOfRangeException("n", "The calculation of the infinite power of argument");
+            }
 
-                if (n == 0)
-                {
-                    throw new ArgumentOutOfRangeException("n", "The calculation of the infinite power of argument");
-                }
+            if (accuracy < 0)
+            {
+                throw new ArgumentOutOfRangeException("accuracy", "Ipossible accuracy value");
+            }
 
-                throw ex;
-            } 
-       
+            double x = arg;
+            double next = x;
+            do
+            {
+                x = next;
+                next = (((n - 1) * x) + (arg / Math.Pow(x, (n - 1)))) / n;
+            } while (Math.Abs(x - next) > accuracy);
+
+            return x;
+
         }
     }
 }
