@@ -30,7 +30,7 @@ namespace CustomFormatProvider.Task2.Library
             if (format == "H")
             {
                 if (arg is int)
-                    return numericString;
+                    return CustomConvert.ToHex((int)arg);
                 else
                     throw new FormatException(
                               string.Format("'{0}' cannot be used to format {1}.",

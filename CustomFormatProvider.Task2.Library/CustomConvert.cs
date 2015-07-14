@@ -8,5 +8,10 @@ namespace CustomFormatProvider.Task2.Library
 {
     public static class CustomConvert
     {
+        public static string ToHex(int value)
+        {
+            string result = "";
+            return result;
+        }
     }
 }
