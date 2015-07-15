@@ -44,5 +44,44 @@ namespace Nod.Task3.Test
             int actual = NodCalc.Euclidean(ref time);
         }
 
+        // Binary EA
+
+        [TestMethod]
+        public void BinaryNodCalcValueTwoArgsTest()
+        {
+            int first = 15;
+            int second = 21;
+            int expected = 3;
+            TimeSpan time = new TimeSpan();
+
+            int actual = NodCalc.EuclideanBinary(ref time, first, second);
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void BinaryNodCalcValueFourArgsTest()
+        {
+            int first = 16;
+            int second = 32;
+            int third = 36;
+            int fourth = 64;
+            int expected = 4;
+            TimeSpan time = new TimeSpan();
+
+            int actual = NodCalc.EuclideanBinary(ref time, first, second, third, fourth);
+
+            Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentNullException))]
+        public void BinaryNodCalcExceptionWithoutArgsTest()
+        {
+            TimeSpan time = new TimeSpan();
+
+            int actual = NodCalc.EuclideanBinary(ref time);
+        }
+
     }
 }
