@@ -15,7 +15,7 @@ namespace Nod.Task3.Test
             int expected = 3;
             TimeSpan time = new TimeSpan();
 
-            int actual = NodCalc.Evklidean(ref time, first, second);
+            int actual = NodCalc.Euclidean(ref time, first, second);
 
             Assert.AreEqual(expected, actual);
         }
@@ -30,7 +30,7 @@ namespace Nod.Task3.Test
             int expected = 4;
             TimeSpan time = new TimeSpan();
 
-            int actual = NodCalc.Evklidean(ref time, first, second, third, fourth);
+            int actual = NodCalc.Euclidean(ref time, first, second, third, fourth);
 
             Assert.AreEqual(expected, actual);
         }
@@ -41,7 +41,7 @@ namespace Nod.Task3.Test
         {
             TimeSpan time = new TimeSpan();
 
-            int actual = NodCalc.Evklidean(ref time);
+            int actual = NodCalc.Euclidean(ref time);
         }
 
     }
